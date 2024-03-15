@@ -1,0 +1,122 @@
+.parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 800px;
+            margin: 10px;
+            position: relative;
+        }
+
+        .text {
+            width: 800px;
+            padding-left: 50px;
+            float: left;
+            position: absolute;
+
+            h1 {
+                // font-size: 20px;
+                font-weight: 400;
+            }
+
+            h3 {
+                margin-top: 10px;
+                display: flex;
+                font-weight: 400;
+                p{
+                    font-weight: 600;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .cards {
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        mat-card {
+            border-radius: 15px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            img{
+                height: 70px;
+            }
+            div {
+
+                h4{
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .green {
+            background-color: #ebffcc;
+            border: 1px solid #c5e5a0;
+        }
+
+        .blue {
+            background-color: #cdfffa;
+            border: 1px solid #a3dadb;
+        }
+
+        .purple {
+            background-color: #ebe8f9;
+            border: 1px solid #c0aed2;
+        }
+    }
+
+    .formTable {
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        margin-top: 20px;
+
+        mat-card {
+            border: 0px solid black;
+            border-radius: 15px;
+            form {
+                padding: 1rem;
+                width: 100%;
+                h2{
+                    font-weight: 400
+                }
+                .column {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: left;
+                }
+            }
+        }
+        .table {
+            height: 100%;
+            width: 55%;
+            display: flex;
+
+            #dataTable{
+                height: auto;
+            }
+        }
+    }
+}
