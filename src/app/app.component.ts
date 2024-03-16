@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
   onFormSubmit() {
     if (this.taskForm.valid) {
       const formData = this.taskForm.value;
-      this.dataSource = [...this.dataSource, formData];
+      this.dataSource = [formData, ...this.dataSource];
       localStorage.setItem('formData', JSON.stringify(this.dataSource));
 
       if (formData.type == 'Income') {
